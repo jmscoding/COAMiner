@@ -1,0 +1,162 @@
+{
+    "thehackernews": {
+        "relevant": [
+            "https://thehackernews.com/2021/07/how-to-mitigate-microsoft-print-spooler.html",
+            "https://thehackernews.com/2021/10/google-releases-urgent-chrome-update-to.html",
+            "https://thehackernews.com/2021/10/why-database-patching-best-practice.html",
+            "https://thehackernews.com/2021/08/magento-update-released-fix-critical.html"
+        ],
+        "not relevant": [
+            "https://thehackernews.com/2021/10/this-new-android-malware-can-gain-root.html",
+            "https://thehackernews.com/2021/10/ebook-guide-to-centralized-log.html",
+            "https://thehackernews.com/2021/10/new-attack-let-attacker-collect-and.html",
+            "https://thehackernews.com/2021/10/nyt-journalist-repeatedly-hacked-with.html",
+            "https://thehackernews.com/2021/10/hackers-set-up-fake-company-to-get-it.html",
+            "https://thehackernews.com/2021/10/critical-flaw-in-opensea-could-have-let.html"
+        ]
+    },
+    "threatpost": {
+        "relevant": [
+            "https://threatpost.com/parallels-inconvenient-fix/168997/",
+            "https://threatpost.com/critical-patches-adobe-security-bulletin/175825/",
+            "https://threatpost.com/war-driving-wi-fi-password-cracking/175817/",
+            "https://threatpost.com/solarwinds-active-directory-servers-foggyweb-backdoor/175056/"
+        ],
+        "not relevant": [
+            "https://threatpost.com/teen-rakes-in-2-74m-worth-of-bitcoin-in-phishing-scam/175834/",
+            "https://threatpost.com/threat-actors-abuse-discord-to-push-malware/175663/",
+            "https://threatpost.com/apt-commodity-rats-microsoft-bug/175601/",
+            "https://threatpost.com/transnational-fraud-military-members/175298/",
+            "https://threatpost.com/apple-airtag-zero-day-trackers/175143/",
+            "https://threatpost.com/women-minorities-hacked/175038/"
+        ]
+    },
+    "nakedsecurity.sophos": {
+        "relevant": [
+            "https://nakedsecurity.sophos.com/2021/09/08/windows-zero-day-mshtml-attack-how-not-to-get-booby-trapped/",
+            "https://nakedsecurity.sophos.com/2021/03/30/php-web-language-narrowly-avoids-dangerous-supply-chain-attack/",
+            "https://nakedsecurity.sophos.com/2021/02/10/patch-now-to-stop-hackers-blindly-crashing-your-windows-computers/",
+            "https://nakedsecurity.sophos.com/2021/01/28/cybersecurity-tips-for-university-students/"
+        ],
+        "not relevant": [
+            "https://nakedsecurity.sophos.com/2021/04/08/italian-charged-with-hiring-dark-web-hitman-to-murder-his-ex-girlfriend/",
+            "https://nakedsecurity.sophos.com/2020/12/24/s3-ep12-a-chat-with-social-engineering-hacker-rachel-tobac-podcast/",
+            "https://nakedsecurity.sophos.com/2021/01/20/has-the-coronavirus-pandemic-affected-apples-hardware-design/",
+            "https://nakedsecurity.sophos.com/2021/01/14/europol-announces-bust-of-worlds-biggest-dark-web-marketplace/",
+            "https://nakedsecurity.sophos.com/2020/12/31/get-back-into-the-cybersecurity-groove-for-2021/",
+            "https://nakedsecurity.sophos.com/2021/10/25/becybersmart-2021-week4/"
+        ]
+    },
+    "cyberdb": {
+        "relevant": [
+            "https://www.cyberdb.co/cybersecurity-hygiene-for-kids/",
+            "https://www.cyberdb.co/real-world-examples-for-owasp-top-10-vulnerabilities/",
+            "https://www.cyberdb.co/10-ways-to-protect-business-devices-from-hackers/"
+        ],
+        "not relevant": [
+            "https://www.cyberdb.co/cybersecurity-will-2016-be-the-year-of-market-consolidation/",
+            "https://www.cyberdb.co/6-information-security-certifications-to-boost-your-career/",
+            "https://www.cyberdb.co/should-we-just-accept-cyber-breaches-as-the-new-normal/",
+            "https://www.cyberdb.co/4-ways-to-market-your-cybersecurity-agency/",
+            "https://www.cyberdb.co/6-ways-to-optimize-your-it-infrastructure/",
+            "https://www.cyberdb.co/new-ransomware-trends-you-should-know-in-2021/",
+            "https://www.cyberdb.co/key-ai-cybersecurity-trends-for-2021-is-ai-a-boon-or-bane-for-cybersecurity/"
+        ]
+    },
+    "bleepingcomputer": {
+        "relevant": [
+            "https://www.bleepingcomputer.com/news/security/mitre-shares-list-of-most-dangerous-hardware-weaknesses/",
+            "https://www.bleepingcomputer.com/news/security/trojan-source-attack-method-can-hide-bugs-into-open-source-code/",
+            "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-kb5006674-kb5006670-updates-break-printing/"
+        ],
+        "not relevant": [
+            "https://www.bleepingcomputer.com/offer/deals/pre-black-friday-sale-this-cybersecurity-analyst-training-is-15-percent-off/",
+            "https://www.bleepingcomputer.com/news/security/canadian-province-health-care-system-disrupted-by-cyberattack/",
+            "https://www.bleepingcomputer.com/offer/deals/learn-how-to-defend-networks-with-this-white-hat-hacking-bundle/",
+            "https://www.bleepingcomputer.com/news/security/blackshadow-hackers-breach-israeli-hosting-firm-and-extort-customers/",
+            "https://www.bleepingcomputer.com/news/security/fbi-hellokitty-ransomware-adds-ddos-attacks-to-extortion-tactics/",
+            "https://www.bleepingcomputer.com/news/security/scuf-gaming-store-hacked-to-steal-credit-card-info-of-32-000-customers/",
+            "https://www.bleepingcomputer.com/news/security/evil-corp-demands-40-million-in-new-macaw-ransomware-attacks/"
+        ]
+    },
+    "zdnet": {
+        "relevant": [
+            "https://www.zdnet.com/article/solarwinds-hacking-group-nobelium-is-now-targeting-the-global-it-supply-chain-microsoft-warns/",
+            "https://www.zdnet.com/article/how-to-find-and-remove-spyware-from-your-phone/",
+            "https://www.zdnet.com/article/hp-patches-omen-driver-privilege-escalation-vulnerability/"
+        ],
+        "not relevant": [
+            "https://www.zdnet.com/article/schools-put-the-brakes-on-facial-recognition-scheme-for-kids-buying-lunch/",
+            "https://www.zdnet.com/article/researchers-discover-bypass-bug-in-iphone-visa-apple-pay-to-make-contactless-payments/",
+            "https://www.zdnet.com/article/black-market-traders-cash-in-on-fake-covid-19-vaccination-records/",
+            "https://www.zdnet.com/article/trend-micro-buys-hijackthis-launches-siteadvisor-competitor/",
+            "https://www.zdnet.com/article/chief-exec-of-cybersecurity-group-ib-arrested-on-treason-charge/",
+            "https://www.zdnet.com/article/over-60-million-records-exposed-in-wearable-fitness-tracking-data-breach-via-unsecured-database/",
+            "https://www.zdnet.com/article/this-is-the-perfect-ransomware-victim-according-to-cybercriminals/"
+        ]
+    },
+    "cybersecurity.att": {
+        "relevant": [
+            "https://cybersecurity.att.com/blogs/security-essentials/how-quantum-computing-will-effect-cryptography-why-we-need-post-quantum-cryptography",
+            "https://cybersecurity.att.com/blogs/labs-research/lazarus-campaign-ttps-and-evolution"
+        ],
+        "not relevant": [
+            "https://cybersecurity.att.com/blogs/security-essentials/winner-of-the-att-diversity-and-inclusion-champion-award-2021",
+            "https://cybersecurity.att.com/blogs/security-essentials/6-business-functions-that-will-benefit-from-cybersecurity-automation",
+            "https://cybersecurity.att.com/blogs/security-essentials/what-is-digital-transformation",
+            "https://cybersecurity.att.com/blogs/security-essentials/lessons-learned-from-building-an-inventory-of-systems",
+            "https://cybersecurity.att.com/blogs/security-essentials/introducing-atts-managed-endpoint-security-with-sentinelone",
+            "https://cybersecurity.att.com/blogs/security-essentials/what-is-a-security-operations-center-soc",
+            "https://cybersecurity.att.com/blogs/security-essentials/extended-threat-detection-and-response-xdr-filling-out-cybersecurity-gaps",
+            "https://cybersecurity.att.com/blogs/security-essentials/secure-access-service-edge-explained"
+        ]
+    },
+    "anomali": {
+        "relevant": [
+            "https://www.anomali.com/blog/anomali-cyber-watch-attacks-against-israeli-targets-macos-zero-days-conti-ransomware-targeting-us-healthcare-and-more",
+            "https://www.anomali.com/blog/threat-actors-capitalize-on-covid-19-vaccine-news-to-run-campaigns-aws-abused-to-host-malicious-pdfs"
+        ],
+        "not relevant": [
+            "https://www.anomali.com/blog/anomali-february-product-release-moving-beyond-tactical-intelligence",
+            "https://www.anomali.com/blog/anomali-automation-streamlines-investigations-eases-threat-intelligence-analyst-workloads",
+            "https://www.anomali.com/blog/wolves-attack-when-the-herd-is-distracted",
+            "https://www.anomali.com/blog/anomali-history-in-the-making",
+            "https://www.anomali.com/blog/suspected-north-korean-cyber-espionage-campaign-targets-multiple-foreign-ministries-and-think-tanks",
+            "https://www.anomali.com/blog/phishing-campaign-impersonates-mexico-peru-uruguay-governments-e-procurement-systems",
+            "https://www.anomali.com/blog/enhancing-your-siem-with-retrospective-analysis-in-anomali-match",
+            "https://www.anomali.com/blog/anomali-joins-no-more-ransom-partnership-ecosystem"
+        ]
+    },
+    "paloaltonetworks": {
+        "relevant": [
+            "https://www.paloaltonetworks.com/blog/2021/10/email-attacks-mitigation-tips/",
+            "https://www.paloaltonetworks.com/blog/2021/08/financial-services-cyberattacks/",
+            "https://www.paloaltonetworks.com/blog/2021/03/patching-microsoft-exchange-servers/"
+        ],
+        "not relevant": [
+            "https://www.paloaltonetworks.com/blog/2021/10/vm-series-virtual-firewalls/",
+            "https://www.paloaltonetworks.com/blog/2021/10/free-virtual-firewall-trial/",
+            "https://www.paloaltonetworks.com/blog/2021/07/investing-in-cybersecurity-now-can-save-money-later/",
+            "https://www.paloaltonetworks.com/blog/2021/06/2021-forrester-tei-study/",
+            "https://www.paloaltonetworks.com/blog/2020/08/network-forrester-wave-enterprise-firewalls/",
+            "https://www.paloaltonetworks.com/blog/2021/01/sase-hybrid-workforce/",
+            "https://www.paloaltonetworks.com/blog/2021/05/forrester-endpoint-security-software-as-a-service/"
+        ]
+    },
+    "itsecurityguru": {
+        "relevant": [
+            "https://www.itsecurityguru.org/2021/10/21/protecting-your-apis-from-attacks-and-data-breaches/",
+            "https://www.itsecurityguru.org/2020/09/09/massive-rise-in-ddos-attacks-post-covid-19/"
+        ],
+        "not relevant": [
+            "https://www.itsecurityguru.org/2021/09/09/the-pegasus-project-key-takeaways-for-the-corporate-world/",
+            "https://www.itsecurityguru.org/2020/11/27/sase-a-beginners-guide/",
+            "https://www.itsecurityguru.org/2021/10/14/the-challenges-of-being-a-ciso-during-the-covid-19-pandemic/",
+            "https://www.itsecurityguru.org/2021/07/19/netflix-password-crackdown-why-users-should-be-arguing-for-stronger-measures/",
+            "https://www.itsecurityguru.org/2020/08/26/7-key-advantages-of-using-a-vpn-when-working-from-home/",
+            "https://www.itsecurityguru.org/2021/08/20/the-four-as-of-identity-based-security/",
+            "https://www.itsecurityguru.org/2021/06/16/business-security-remains-resilient-in-the-wake-of-coronavirus/",
+            "https://www.itsecurityguru.org/2021/05/14/heightened-work-related-stress-and-increased-workloads-are-taking-their-toll-on-technology-leaders-mental-wellbeing/"
+        ]
+    }
+}
