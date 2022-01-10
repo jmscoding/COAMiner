@@ -18,8 +18,8 @@ def main():
     # 1x correspond to 5 articles
     count = 101
     
-    tpscraper = TPScraper(url, count)
-    url_list = tpscraper.scrapeSite()
+    tpscraper = TPScraper(url)
+    url_list = tpscraper.scrapeSite(count=2)
     print(len(url_list))
     
     tpscraper_element = TPScraper_element(url_list)
