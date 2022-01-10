@@ -6,7 +6,7 @@ import json
 import pymongo
 
 class Scraper:
-    def __init__(self, test=True):
+    def __init__(self, test=False):
       self.test = test
       self.scraperList = ["TPScraper"]
       self.last_status = []
@@ -57,7 +57,7 @@ def load_data(file):
   return(data)
 
 if __name__ == "__main__":
-    s = Scraper()
+    s = Scraper(test=True)
     s.start_sraping()
     
     # Test Input last status file in database

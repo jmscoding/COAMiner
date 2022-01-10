@@ -138,15 +138,16 @@ def load_data(f):
         data = json.load(fn)
         return(data)
 
-model = ClassClassificator.load_classifier_model()
-classifier = ClassClassificator(model=model)   
+if __name__ == "__main__":
+    model = ClassClassificator.load_classifier_model()
+    classifier = ClassClassificator(model=model)   
 
-filename = '/home/js/Desktop/COAMiner/Extractor/src/test_extractor_ds.json'
-d = load_data(filename)
-print(d)
+    filename = '/home/js/Desktop/COAMiner/Extractor/src/test_extractor_ds.json'
+    d = load_data(filename)
+    print(d)
 
-for data in d:
-    classifier.classify(data)
+    for data in d:
+        classifier.classify(data)
 
 
 
