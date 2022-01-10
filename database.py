@@ -31,7 +31,7 @@ class Database:
     
     def update_one(self, col, query, new):
         up_col_one = self.db[col]
-        x = up_col_one(query, new)
+        x = up_col_one.update_one(query, new)
 
     def find_one(self, col):
         fin_one = self.db[col]
