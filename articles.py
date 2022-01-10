@@ -8,7 +8,8 @@ class RelevantArticle(NewArticle):
     def __init__(self, data=None, id=None):
         super().__init__(data)
         self.id = id
-        self.data['_id'] = id
+        if id is not None:
+            self.data['_id'] = id
 
 # Testfunktionen
 def load_data(f):
