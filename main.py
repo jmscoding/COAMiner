@@ -9,6 +9,8 @@ from scraper import Scraper
 from coa import Coa
 
 import sys
+import time
+import schedule
 
 # load Data
 def load_data(file):
@@ -129,4 +131,8 @@ if __name__=="__main__":
     testarg = True
   else:
     testarg = False
-  coaminer(testarg)
+  schedule.every().day.at("9:00").do(coaminer(testarg))
+
+  while True:
+    schedule.run_pending()
+    time.sleep(1)
