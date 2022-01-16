@@ -72,7 +72,7 @@ def coaminer(testarg):
         rel_article = RelevantArticle(data=data, id=rel_id)
         rel_article_elems.append(rel_article.dump_json())
         db.db[rel_article_col].insert_one(rel_article.dump_json())
-      rel_id += 1
+        rel_id += 1
       
     # insert all relevant articles to relevant_articles
     '''
@@ -95,6 +95,11 @@ def coaminer(testarg):
       for i in range(old_rel_counter + 1, new_rel_counter + 1):
         rel_query = { "_id": i}
         data = rel_article_docs.find_one(rel_query)
+        if data is None:
+          continue
+        # Test Extractor
+        print(data['text'])
+
         coa_text = extractor.extract(data['text'])
         coa = Coa(id=old_coa_counter+1, 
                   cve=coa_text['enums']['cve'],
@@ -104,9 +109,10 @@ def coaminer(testarg):
                   date=data['date'],
                   blogname=data['blog'],
                   coa=coa_text['coa'])
-        coa_elems.append(coa)
+        # coa_elems.append(coa.dump_json())
+        db.db[coa_col].insert_one(coa.dump_json())
         
-      db.db[coa_col].insert_many(coa_elems)
+      
 
 
         

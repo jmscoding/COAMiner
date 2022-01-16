@@ -268,7 +268,9 @@ class Extractor:
 
             # find iocs enums
             cves = ioc.parse_cves(sent.text)
-            cve.append(cves)
+            if len(cves) > 0:
+                for enum in cves:
+                    cve.append(enum)
 
             # find iocs network
             urls = ioc.parse_urls(sent.text)

@@ -11,7 +11,7 @@ class Coa:
                 blogname=None, 
                 coa=None) -> None:
         if id is not None:
-            self.data['_id'] = id
+            self.id = id
         self.enums = {
             "cve": cve
         }
@@ -20,7 +20,19 @@ class Coa:
             "title": title,
             "author": author,
             "date": date,
+            "blog": blogname,
             "coa": coa
         }
+
+        self.article_elems = []
+        self.article_elems.append(self.article)
+
+    def dump_json(self):
+        data = {
+            '_id': self.id,
+            'enums': self.enums,
+            'article': self.article_elems
+        }
+        return(data)
 
     
