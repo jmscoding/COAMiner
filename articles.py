@@ -10,6 +10,9 @@ class RelevantArticle(NewArticle):
         self.id = id
         if id is not None:
             self.data['_id'] = id
+    
+    def dump_json(self):
+        return(self.data)
 
 # Testfunktionen
 def load_data(f):
@@ -22,9 +25,10 @@ if __name__ == "__main__":
     d = load_data(filename)
     # print(d)
     newest = NewArticle(d[0])
-    print(newest.data)
+    #print(newest.data)
 
     n = 0
     test_id = f'thn{n+1}'
     relevant = RelevantArticle(d[1], test_id)
-    print(relevant.data)
+    data = relevant.dump_json()
+    print(data)

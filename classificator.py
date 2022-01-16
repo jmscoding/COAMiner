@@ -49,7 +49,6 @@ class ClassClassificator:
         clean_text = preprocessor.preprocess_text(article['text'])
         p = {
             'text': clean_text,
-            'label': article['label']
         }
 
         logger.debug(str(p['text']))

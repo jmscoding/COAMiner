@@ -1,6 +1,8 @@
 import json
 from os import name
 # import openc2
+from stix2 import CourseOfAction
+
 
 import logging
 
@@ -21,6 +23,9 @@ from database import Database
 from preprocessor import ClassPreprocessor
 
 from ioc_finder import ioc_finder as ioc
+
+# Coa
+from coa import Coa
 
 # Create a logger
 logger = logging.getLogger('logs/extractor_logger')
@@ -221,12 +226,12 @@ class Extractor:
         self.prep_model = ClassPreprocessor.load_model()
         self.preprocessor = ClassPreprocessor(spacy_model=self.prep_model, remove_newline_or_tab=True)
     
-    def extract(self, text):
+    def extract(self, text):        
         coa = {}
         coa_elems = {}
+        cve = []
         coa_enums = {}
         openc2_elems = []
-        cve = []
         stix = []
         stix_elems = []
         stix_elems_buff = []
@@ -263,7 +268,7 @@ class Extractor:
 
             # find iocs enums
             cves = ioc.parse_cves(sent.text)
-            cve = cve + cves
+            cve.append(cves)
 
             # find iocs network
             urls = ioc.parse_urls(sent.text)
@@ -326,6 +331,8 @@ class Extractor:
 
             '''
                 Beliebige Ergänzung möglich
+
+                z.B. nur openC2 Action oder nur Target dann stix_act = True
             '''
 
             # STIX other coa
@@ -334,15 +341,37 @@ class Extractor:
                 stix_pre = True
             if (stix_act is False):
                 if(len(stix_elems_buff) >= 2):
-                    stix_elems.append(stix_elems_buff)
+                    stix_elems.append(' '.join(stix_elems_buff))
                 else:
                     stix_elems_buff = []
             
         print(stix_elems)
+        if len(stix_elems) > 0:
+            stix = self.__extract_stix(stix_elems)
+        coa_elems['stix'] = stix
+
         print(openc2_elems)
         # Test Writing Data to file
         write_data(filename="test.json",data=openc2_elems)
-        coa['openc2'] = openc2_elems
+        coa_elems['openc2'] = openc2_elems
+
+        coa_enums['cve'] = cve
+
+        coa['enums'] = coa_enums
+        coa['coa'] = coa_elems
+        
+        return(coa)
+
+        
+
+    def __extract_stix(self, stix_elems):
+        stix = []
+        for i, v in enumerate(stix_elems):
+            name = f"stix element {i}"
+            coa = CourseOfAction(name=name,
+                                description=v)
+            stix.append(coa)
+        return(stix)
 
     def __extract_openc2_action_stop(self, target, targettype):
         action = "stop"
@@ -354,16 +383,6 @@ class Extractor:
                 }
             }
         }
-        target = target.replace(" ", "")
-        '''
-        # Test openc2 Serialization
-        cmd = openc2.v10.Command(
-            action=action,
-            target=openc2.v10.Process(name=target),
-            )
-        #logger.debug(cmd)
-        
-        '''
         return openc2_action_stop_elem
     
     def __extract_openc2_action_start(self, target, targettype):
