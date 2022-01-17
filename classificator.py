@@ -1,3 +1,12 @@
+"""
+    Title: Module Classificator
+    Description: Classifies all input texts with boolean value, if coa-relevant
+    Author: Johannes Seitz
+    Create_Date: 02.01.2022
+    Update_Date: [16.01.2022]
+    Version: 0.09 []
+"""
+
 import joblib
 import json
 import pandas as pd
@@ -141,7 +150,7 @@ if __name__ == "__main__":
     model = ClassClassificator.load_classifier_model()
     classifier = ClassClassificator(model=model)   
 
-    filename = '/home/js/Desktop/COAMiner/Extractor/src/test_extractor_ds.json'
+    filename = 'src/trainds.json'
     d = load_data(filename)
     print(d)
 

@@ -1,3 +1,12 @@
+"""
+    Title: Module Extractor
+    Description: Identifies possible Coa Elements and extracts them from raw texts 
+    Author: Johannes Seitz
+    Create_Date: 21.12.2021
+    Update_Date: [18.01.2022]
+    Version: 0.05 []
+"""
+
 import json
 from os import name
 # import openc2
@@ -437,18 +446,9 @@ class Extractor:
  
 
 if __name__=="__main__":
-    data = load_data("/home/js/Desktop/COAMiner/Extractor/src/test_extractor_ds.json")
+    data = load_data("src/trainds.json")
     df = pd.DataFrame(data)
-    
-    # Test load_bin Function
-    '''
-    ws = load_bin('/home/js/Desktop/COAMiner/src/servicesWin10.json')
-    print(ws)
-    for elem in ws:
-        print(elem['DisplayName'])
-    '''
-
-    # Test Extractor
+    # Test Extractor 
     #'''
     extractor = Extractor()
 
