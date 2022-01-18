@@ -1,3 +1,12 @@
+"""
+    Title: Scraper Module
+    Description: start the scraper of specific website and stores new articles
+    Author: Johannes Seitz
+    Create_Date: 14.11.2022
+    Update_Date: [18.01.2022]
+    Version: 0.11 []
+"""
+
 from Scraper.TPScraper.TPScraper import TPScraper
 from Scraper.TPScraper.TPScraper_element import TPScraper_element
 from database import Database
