@@ -1,3 +1,12 @@
+"""
+    Title: Main Module of Coaminer
+    Description: start the programm and start the coaminer function at specific time
+    Author: Johannes Seitz
+    Create_Date: 12.01.2022
+    Update_Date: [18.01.2022]
+    Version: 0.03 []
+"""
+
 import pandas as pd
 import json
 
