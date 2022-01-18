@@ -150,12 +150,17 @@ if __name__ == "__main__":
     model = ClassClassificator.load_classifier_model()
     classifier = ClassClassificator(model=model)   
 
-    filename = 'src/trainds.json'
+    filename = 'src/test_ds.json'
     d = load_data(filename)
     print(d)
 
+    test_result_list = []
+
     for data in d:
-        classifier.classify(data)
+        test_result = (classifier.classify(data), data['label'])
+        test_result_list.append(test_result)
+
+    print(test_result_list)
 
 
 
