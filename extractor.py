@@ -7,6 +7,7 @@
     Version: 0.05 []
 """
 
+from datetime import datetime
 import json
 from os import name
 # import openc2
@@ -356,14 +357,14 @@ class Extractor:
                 else:
                     stix_elems_buff = []
             
-        print(stix_elems)
+        # print(stix_elems)
         if len(stix_elems) > 0:
             stix = self.__extract_stix(stix_elems)
         coa_elems['stix'] = stix
 
-        print(openc2_elems)
+        # print(openc2_elems)
         # Test Writing Data to file
-        write_data(filename="test.json",data=openc2_elems)
+        # write_data(filename="test.json",data=openc2_elems)
         coa_elems['openc2'] = openc2_elems
 
         coa_enums['cve'] = cve
@@ -446,12 +447,15 @@ class Extractor:
  
 
 if __name__=="__main__":
-    data = load_data("src/trainds.json")
+    data = load_data("src/test_ds.json")
     df = pd.DataFrame(data)
     # Test Extractor 
     #'''
     extractor = Extractor()
+    coa_List = []
 
     for d in df['text']:
-        extractor.extract(d)
+        coa_List.append(extractor.extract(d))
+    
+    write_data(f"res/coa_List_{str(datetime.now())}.json", coa_List)
     #'''
