@@ -1,0 +1,117 @@
+[
+    {
+        "enums": {
+            "cve": []
+        },
+        "coa": {
+            "stix": [],
+            "openc2": [
+                {
+                    "action": "stop",
+                    "target": {
+                        "Process": {
+                            "name": "Print Spooler"
+                        }
+                    }
+                },
+                {
+                    "action": "stop",
+                    "target": {
+                        "Process": {
+                            "name": "Print Spooler"
+                        }
+                    }
+                },
+                {
+                    "action": "stop",
+                    "target": {
+                        "Process": {
+                            "name": "Print Spooler"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "enums": {
+            "cve": []
+        },
+        "coa": {
+            "stix": [],
+            "openc2": []
+        }
+    },
+    {
+        "enums": {
+            "cve": []
+        },
+        "coa": {
+            "stix": [],
+            "openc2": []
+        }
+    },
+    {
+        "enums": {
+            "cve": []
+        },
+        "coa": {
+            "stix": [],
+            "openc2": []
+        }
+    },
+    {
+        "enums": {
+            "cve": []
+        },
+        "coa": {
+            "stix": [],
+            "openc2": []
+        }
+    },
+    {
+        "enums": {
+            "cve": []
+        },
+        "coa": {
+            "stix": [],
+            "openc2": []
+        }
+    },
+    {
+        "enums": {
+            "cve": []
+        },
+        "coa": {
+            "stix": [],
+            "openc2": []
+        }
+    },
+    {
+        "enums": {
+            "cve": []
+        },
+        "coa": {
+            "stix": [],
+            "openc2": []
+        }
+    },
+    {
+        "enums": {
+            "cve": []
+        },
+        "coa": {
+            "stix": [],
+            "openc2": []
+        }
+    },
+    {
+        "enums": {
+            "cve": []
+        },
+        "coa": {
+            "stix": [],
+            "openc2": []
+        }
+    }
+]
