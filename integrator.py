@@ -1,3 +1,12 @@
+"""
+    Title: Integrator Module
+    Description: Export of specific COA
+    Author: Johannes Seitz
+    Create_Date: 07.01.2022
+    Update_Date: [18.01.2022]
+    Version: 0.02 []
+"""
+
 from database import Database
 import json
 import os
