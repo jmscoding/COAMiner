@@ -34,3 +34,31 @@ mongorestore Database/knowledgebase/
 mongorestore Database/testdb/
 mongorestore Database/coaminer/
 ```
+
+Die Anwendung umfasst einige Teilfunktionen, die jeweils alle einzeln getestet werden können. Voraussetzung für die Ausführung ist die Installation, der im vorherigen Abschnitt beschriebenen Komponenten. Produktive Tests der Gesamtanwendung waren nur auf einerphysischen Maschine erfolgreich. Einzelne Funktionen können auch in einer virtuellen Maschine erfolgreich ausgeführt werden. Als erste Funktion kann der Scraper ausgeführt werden. Da die verwendete Library Selenium sehr viele Hardwareressourcen benögigt, kann es in einer virtuellen Umgebung zum Absturz kommen.
+
+```Python
+# Teste den Scraper
+python scraper.py
+```
+
+Des Weiteren kann der Classificator ausgeführt werden. Hierbei wird ein Testdatensatz verwendet, der im Repository unter src/test_ds.json zu finden ist. Nach der Klassifikation wird über die Kommandozeile eine Liste an Tupeln ausgegeben, die jeweils an der ersten Stelle, das Ergebnis der Funktion anzeigt und an der zweiten Stelle das Label des Datensatzes präsentiert.
+
+```Python
+# Teste den Classificator
+python classificator.py
+```
+
+Außerdem existiert eine Testfunktion des Extractor-Moduls. Hierbei wird der gleiche Datensatz wie beim Classificator-Modul verwendet. Nach Beendigung der Funktion wird im Ordner res ein JSON-Dokument mit den Informationen der extrahierten Course of Action hinterlegt.
+
+```Python
+# Teste den Extractor
+python extractor.py
+```
+
+Um einen Test der Gesamtanwendung zu initialisieren, muss der folgende Befehl ausgeführt werden. Hierbei muss beachtet werden, dass für den Test das Argument **test** an den Befehl angehängt werden muss.
+
+```Python
+# Starte Test der kompletten Anwendung
+python main.py test
+```
