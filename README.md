@@ -20,3 +20,4 @@ python −m venv venv
 # Installiere Requirements
 pip install -r requirements.txt
 ```
+Zusätzlich muss für die Datenanbindung eine lokale MongoDB-Datenbank auf dem Rechner unter dem Port 27015 zur Laufzeit des Programms aktiv sein.
